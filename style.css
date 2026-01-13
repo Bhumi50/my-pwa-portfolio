@@ -1,0 +1,478 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+    background-color: #c1e2e2;
+    padding: 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+
+
+}
+
+/* MAIN RESUME CONTAINER */
+.resume {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT SIDEBAR */
+.left {
+    width: 30%;
+    background-color: #0313259d;
+    color: #ffffff;
+    padding: 25px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #010607;
+    object-fit: cover;
+}
+
+/* LEFT HEADINGS */
+.left h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+}
+
+/* LEFT TEXT */
+.left p,
+.left li {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+/* LEFT LIST */
+.left ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* RIGHT CONTENT */
+.right {
+    width: 70%;
+    padding: 35px;
+    color: #333;
+}
+
+/* NAME */
+.right h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    color:#570c36
+}
+
+
+/* TITLE */
+.right h4 {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 25px;
+}
+
+/* SECTION HEADINGS */
+.right h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    
+    color: #190c57;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* ABOUT ME */
+.right p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* EDUCATION SECTION */
+.education {
+    margin-top: 15px;
+}
+
+.education h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.education span {
+    float: right;
+    font-size: 13px;
+    color: #666;
+}
+
+.education p {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.project {
+    margin-top: 15px;
+}
+
+.project h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.project ul {
+    margin-left: 20px;
+}
+
+.project li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+/* WORK EXPERIENCE */
+.job {
+    margin-top: 15px;
+}
+
+.job h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.job span {
+    float: right;
+    font-size: 13px;
+    color: #666;
+}
+
+.job ul {
+    margin: 8px 0 8px 20px;
+}
+
+.job li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* CLEAR FLOAT */
+.job h3::after,
+.education h3::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 12pt; /* adjust for PDF */
+    }
+
+    /* Hide the download button in PDF */
+    button {
+        display: none;
+    }
+
+    /* Adjust layout for printing */
+    .resume {
+        width: 100%;
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        width: 100%;
+        float: none;
+    }
+
+    img {
+        max-width: 150px; /* scale profile image for print */
+        height: auto;
+    }
+
+    h1, h2, h3, h4 {
+        page-break-after: avoid; /* avoid splitting headings across pages */
+    }
+
+    section, .education, .project, .job {
+        page-break-inside: avoid; /* avoid breaking content mid-section */
+    }
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+    background-color: #c1e2e2;
+    padding: 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+
+
+}
+
+/* MAIN RESUME CONTAINER */
+.resume {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT SIDEBAR */
+.left {
+    width: 30%;
+    background-color: #0313259d;
+    color: #ffffff;
+    padding: 25px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #010607;
+    object-fit: cover;
+}
+
+/* LEFT HEADINGS */
+.left h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+}
+
+/* LEFT TEXT */
+.left p,
+.left li {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+/* LEFT LIST */
+.left ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* RIGHT CONTENT */
+.right {
+    width: 70%;
+    padding: 35px;
+    color: #333;
+}
+
+/* NAME */
+.right h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    color:#570c36
+}
+
+
+/* TITLE */
+.right h4 {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 25px;
+}
+
+/* SECTION HEADINGS */
+.right h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    
+    color: #190c57;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* ABOUT ME */
+.right p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* EDUCATION SECTION */
+.education {
+    margin-top: 15px;
+}
+
+.education h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.education span {
+    float: right;
+    font-size: 13px;
+    color: #666;
+}
+
+.education p {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.project {
+    margin-top: 15px;
+}
+
+.project h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.project ul {
+    margin-left: 20px;
+}
+
+.project li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+/* WORK EXPERIENCE */
+.job {
+    margin-top: 15px;
+}
+
+.job h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.job span {
+    float: right;
+    font-size: 13px;
+    color: #666;
+}
+
+.job ul {
+    margin: 8px 0 8px 20px;
+}
+
+.job li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* CLEAR FLOAT */
+.job h3::after,
+.education h3::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 12pt; /* adjust for PDF */
+    }
+
+    /* Hide the download button in PDF */
+    button {
+        display: none;
+    }
+
+    /* Adjust layout for printing */
+    .resume {
+        width: 100%;
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        width: 100%;
+        float: none;
+    }
+
+    img {
+        max-width: 150px; /* scale profile image for print */
+        height: auto;
+    }
+
+    h1, h2, h3, h4 {
+        page-break-after: avoid; /* avoid splitting headings across pages */
+    }
+
+    section, .education, .project, .job {
+        page-break-inside: avoid; /* avoid breaking content mid-section */
+    }
+}
